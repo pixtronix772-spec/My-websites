@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-white dark:bg-gray-800 shadow">
+    <div class="flex items-center space-x-3">
+      <img src="images/logo.png" alt="Logo" class="h-16 w-16 object-contain">
+      <span class="text-2xl font-bold text-blue-600"></span>
+    </div>
+    <ul class="flex space-x-6">
+      <li><a href="index.html" class="hover:text-blue-500 font-bold">Home</a></li>
+      <li><a href="services.html" class="hover:text-blue-500">Services</a></li>
+      <li><a href="contests.html" class="hover:text-blue-500">Contests</a></li>
+      <li><a href="projects.html" class="hover:text-blue-500">Projects</a></li>
+      <li><a href="signup.html" class="hover:text-blue-500">Freelancer Signup</a></li>
+      <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center text-center py-16 px-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Hire Top Freelancers & Win Creative Contests</h1>
+    <p class="text-lg md:text-2xl mb-8">SEO, Email Marketing, Content Writing, and more. Join our platform to hire experts or showcase your talent in exciting contests!</p>
+    <div class="flex flex-col md:flex-row gap-4">
+      <a href="services.html" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded shadow hover:bg-blue-100 transition">Hire Experts</a>
+      <a href="contests.html" class="px-6 py-3 bg-purple-700 text-white font-semibold rounded shadow hover:bg-purple-800 transition">Join Contest</a>
+    </div>
+  </section>
+
+  <!-- Services Highlights -->
+  <section class="py-16 px-4 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col items-center">
+        <span class="text-blue-500 text-5xl mb-4"><i class="fas fa-search"></i></span>
+        <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
+        <p class="text-center mb-4">Boost your website ranking and visibility with our expert SEO services.</p>
+        <a href="services.html#seo" class="text-blue-600 hover:underline">Learn More</a>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col items-center">
+        <span class="text-purple-500 text-5xl mb-4"><i class="fas fa-envelope"></i></span>
+        <h3 class="text-xl font-semibold mb-2">Email Marketing</h3>
+        <p class="text-center mb-4">Engage your audience and grow your business with targeted email campaigns.</p>
+        <a href="services.html#email" class="text-blue-600 hover:underline">Learn More</a>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col items-center">
+        <span class="text-blue-400 text-5xl mb-4"><i class="fas fa-pen-nib"></i></span>
+        <h3 class="text-xl font-semibold mb-2">Content Writing</h3>
+        <p class="text-center mb-4">Professional content writing for blogs, websites, and marketing materials.</p>
+        <a href="services.html#content" class="text-blue-600 hover:underline">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contest Preview -->
+  <section class="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+    <h2 class="text-3xl font-bold text-center mb-10">Ongoing Contests</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col">
+        <span class="text-yellow-500 text-3xl mb-2 flex items-center justify-center"><i class="fas fa-crown"></i></span>
+        <h3 class="text-xl font-semibold mb-2">Logo Design Challenge</h3>
+        <p class="mb-4">Showcase your creativity! Submit your best logo design for a chance to win $500.</p>
+        <a href="contests.html" class="text-purple-600 hover:underline">View Contest</a>
+      </div>
+      <div class="bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col">
+        <span class="text-orange-500 text-3xl mb-2 flex items-center justify-center"><i class="fas fa-newspaper"></i></span>
+        <h3 class="text-xl font-semibold mb-2">Content Writing Marathon</h3>
+        <p class="mb-4">Write an engaging article on digital marketing trends and win exciting prizes.</p>
+        <a href="contests.html" class="text-purple-600 hover:underline">View Contest</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-16 mt-24 text-lg">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <span class="font-bold text-2xl"></span> &copy; 2024
+      </div>
+      <div class="flex space-x-6 mb-6 md:mb-0 text-2xl">
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <form class="flex">
+        <input type="email" placeholder="Subscribe to newsletter" class="px-4 py-3 rounded-l bg-white text-gray-900 focus:outline-none text-base" required>
+        <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-r hover:bg-blue-700 text-base">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html> 

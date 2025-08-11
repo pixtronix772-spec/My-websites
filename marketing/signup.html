@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer Signup</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-white dark:bg-gray-800 shadow">
+    <img src="images/logo.png" alt="Logo" class="h-16 w-16 object-contain">
+    <ul class="flex space-x-6">
+      <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+      <li><a href="services.html" class="hover:text-blue-500">Services</a></li>
+      <li><a href="contests.html" class="hover:text-blue-500">Contests</a></li>
+      <li><a href="projects.html" class="hover:text-blue-500">Projects</a></li>
+      <li><a href="signup.html" class="hover:text-blue-500 font-bold">Freelancer Signup</a></li>
+      <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
+    </ul>
+    <!-- Dark mode button removed -->
+  </nav>
+
+  <section class="py-16 px-4 max-w-xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-10">Freelancer Signup</h1>
+    <form class="bg-white dark:bg-gray-800 rounded-lg shadow p-8">
+      <div class="mb-4">
+        <label class="block mb-2 font-semibold">Full Name</label>
+        <input type="text" class="w-full px-3 py-2 rounded bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none" required>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 font-semibold">Email</label>
+        <input type="email" class="w-full px-3 py-2 rounded bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none" required>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 font-semibold">Portfolio (URL or Upload)</label>
+        <input type="url" class="w-full px-3 py-2 rounded bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none mb-2" placeholder="Portfolio URL">
+        <input type="file" class="w-full px-3 py-2 rounded bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none">
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 font-semibold">Skills</label>
+        <select multiple class="w-full px-3 py-2 rounded bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none">
+          <option>SEO</option>
+          <option>Email Marketing</option>
+          <option>Content Writing</option>
+          <option>Logo Design</option>
+          <option>Web Development</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <button type="submit" class="w-full px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Register</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-16 mt-24 text-lg">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        &copy; 2024
+      </div>
+      <div class="flex space-x-6 mb-6 md:mb-0 text-2xl">
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <form class="flex">
+        <input type="email" placeholder="Subscribe to newsletter" class="px-4 py-3 rounded-l bg-white text-gray-900 focus:outline-none text-base" required>
+        <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-r hover:bg-blue-700 text-base">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
